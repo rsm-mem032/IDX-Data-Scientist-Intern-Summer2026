@@ -22,6 +22,7 @@ IDX-Data-Scientist-Intern-Summer2026/
 ├── requirements.txt
 ├── notebooks/
 │   └── 01_exploration.ipynb
+│   └── 02_modeling.ipynb
 ├── src/
 │   └── .gitkeep
 ├── outputs/
