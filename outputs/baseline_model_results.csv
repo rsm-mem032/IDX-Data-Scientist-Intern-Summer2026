@@ -1,0 +1,4 @@
+model_name,log_target,feature_count,numeric_feature_count,categorical_feature_count,MAE,RMSE,R2
+county_only_raw_target,False,13,12,1,176134.1128455535,1010179.0949797271,0.6370951692075499
+county_only_log_target,True,13,12,1,746444.6431972996,28076185.492270626,-279.33169421865665
+no_geo_log_target,True,10,10,0,3608747.8127663163,258355311.67508632,-23736.270860843993
