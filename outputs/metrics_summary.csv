@@ -1,14 +1,14 @@
 week,model_name,model_family,feature_set,R2,MAPE,MdAPE,MAE,RMSE,note
-Week 7,xgb_log_market_context_filtered,XGBoost,market_context,0.6213706961550802,0.0720425718191628,0.0243331938049393,76023.72639092525,1031333.8921781832,Week 7 advanced-model comparison
-Week 7,xgb_log_market_context_all,XGBoost,market_context,0.6345403972434747,0.0723792247470188,0.0251091269841269,75748.9291006364,1013238.9295096624,Week 7 advanced-model comparison
-Week 7,xgb_log_reality_all,XGBoost,reality,0.63448593595292,0.0728421839363622,0.0252530158480291,75476.9368247494,1013314.42382373,Week 7 advanced-model comparison
-Week 7,xgb_log_baseline_all,XGBoost,baseline,0.6126964163108957,0.0740755010183937,0.0261589285714285,82620.99537918018,1043080.7635674956,Week 7 advanced-model comparison
-Week 6,baseline_features,LinearRegression,baseline_features,0.6372,0.1952,0.0823,175982.73,1009587.58,Week 6 feature-engineering comparison
-Week 7,LinearRegression,LinearRegression,,0.6371693989064846,0.1952629676492891,0.0824529532790124,176033.51325583394,1009587.8901510153,Week 7 advanced-model comparison
-Week 5,LinearRegression,LinearRegression,retained_baseline_features,0.6370951692075499,0.1954144485686567,0.0824324334051698,176134.1128455535,1010179.0949797272,Week 5 model comparison on the same holdout month
-Week 6,compact_engineered_features,LinearRegression,compact_engineered_features,0.6359,0.2074,0.0892,185062.61,1011356.22,Week 6 feature-engineering comparison
-Week 6,district_swap_features,LinearRegression,district_swap_features,0.5742,0.229,0.0685,187473.71,1093699.74,Week 6 feature-engineering comparison
-Week 5,DecisionTree,DecisionTree,retained_baseline_features,0.3804682342759772,0.2298537042654507,0.0664734832282036,202766.878195657,1319878.0052807468,Week 5 model comparison on the same holdout month
-Week 6,full_engineered_features,LinearRegression,full_engineered_features,0.5688,0.2315,0.0746,198825.53,1100660.12,Week 6 feature-engineering comparison
-Week 6,refined_engineered_features,LinearRegression,refined_engineered_features,0.6154,0.2933,0.1402,241948.09,1039384.47,Week 6 feature-engineering comparison
-Week 5,RandomForest,RandomForest,retained_baseline_features,0.4037974905462723,0.4062248014641336,0.1896815530228209,350910.1544967106,1294788.7043442824,Week 5 model comparison on the same holdout month
+Week 7,xgb_log_market_context_all,XGBoost,market_context,0.6345324091513331,0.0718231185750293,0.0248769324736471,74595.59813620435,1013250.0029657184,Week 7 advanced-model comparison
+Week 7,xgb_log_baseline_all,XGBoost,baseline,0.6063335604395226,0.0723062292281882,0.0245486067396869,81179.86326597724,1051614.0375124484,Week 7 advanced-model comparison
+Week 7,xgb_log_reality_all,XGBoost,reality,0.63465885520283,0.072611347803341,0.02533767198012,74895.49445956555,1013074.7035011636,Week 7 advanced-model comparison
+Week 7,xgb_log_market_context_filtered,XGBoost,market_context,0.6194844944524266,0.0730737211672693,0.0241356194690265,75860.19488226333,1033899.5771767306,Week 7 advanced-model comparison
+Week 5,DecisionTree,DecisionTree,retained_baseline_features,0.411706440691289,0.2359342799224269,0.0793793210506662,211882.3296065152,1286171.9948612386,Week 5 model comparison on the same holdout month
+Week 7,LinearRegression,LinearRegression,,0.6335646946074573,0.2456091540889269,0.1014421077412906,198948.92160690177,1014590.598631177,Week 7 advanced-model comparison
+Week 6,baseline_features,LinearRegression,baseline_features,0.6335,0.2458,0.1014,199044.84,1014622.2,Week 6 feature-engineering comparison
+Week 5,LinearRegression,LinearRegression,retained_baseline_features,0.6334868860465703,0.2460312006265898,0.1014332248118597,199158.7293024948,1015188.668130754,Week 5 model comparison on the same holdout month
+Week 6,compact_engineered_features,LinearRegression,compact_engineered_features,0.6336,0.2492,0.1072,202077.73,1014488.36,Week 6 feature-engineering comparison
+Week 6,refined_engineered_features,LinearRegression,refined_engineered_features,0.6294,0.2678,0.1171,213149.11,1020312.39,Week 6 feature-engineering comparison
+Week 6,district_swap_features,LinearRegression,district_swap_features,0.5996,0.2745,0.1181,216407.22,1060573.54,Week 6 feature-engineering comparison
+Week 6,full_engineered_features,LinearRegression,full_engineered_features,0.5873,0.3213,0.1223,245054.85,1076784.68,Week 6 feature-engineering comparison
+Week 5,RandomForest,RandomForest,retained_baseline_features,0.484235779892935,0.4217787631658133,0.204056973518591,349229.06063054217,1204280.3705117244,Week 5 model comparison on the same holdout month

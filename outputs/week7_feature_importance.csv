@@ -1,166 +1,174 @@
 feature,importance
-num__ListPrice,0.4892467
-num__county_hist_median_closeprice,0.22615032
-num__log_living_area,0.08793107
-num__list_price_per_sqft,0.07403979
-num__LivingArea,0.046211243
-num__BathroomsTotalInteger,0.025808226
-num__district_hist_median_closeprice,0.016241005
-num__Latitude,0.0031962106
-num__Longitude,0.0025024216
-num__DaysOnMarket,0.0020118924
-num__log_days_on_market,0.0019468621
-num__log_lot_size,0.0018043305
-cat__CountyOrParish_Alameda,0.0017772096
-cat__unified_district_name_infrequent_sklearn,0.0015636066
-num__LotSizeSquareFeet,0.0013123781
-cat__unified_district_name_Berkeley Unified,0.00092176674
-num__bedrooms_per_1000_sqft,0.00089930417
-cat__unified_district_name_Ramona City Unified,0.000857893
-cat__unified_district_name_Oakland Unified,0.0008512018
-num__is_newer_home,0.00070831814
-cat__CountyOrParish_San Bernardino,0.00070806383
-cat__CountyOrParish_Santa Clara,0.00068318256
-num__county_hist_median_list_ppsf,0.0006731652
-cat__unified_district_name_Valley Center-Pauma Unified,0.00064136845
-cat__unified_district_name_Pasadena Unified,0.0006258773
-num__BedroomsTotal,0.00062179385
-num__property_age,0.000620884
-num__high_bedroom_flag,0.000620189
-cat__unified_district_name_Piedmont City Unified,0.0005903927
-cat__unified_district_name_Morongo Unified,0.0005524159
-num__lot_to_living_ratio,0.00053643156
-num__YearBuilt,0.0005190383
-cat__unified_district_name_Oceanside Unified,0.00045906566
-cat__CountyOrParish_Riverside,0.00045482052
-cat__unified_district_name_Downey Unified,0.0004294819
-num__district_hist_transaction_count,0.00040165577
-num__bathrooms_per_bedroom,0.00037180303
-num__living_area_per_bedroom,0.00033262727
-cat__CountyOrParish_Los Angeles,0.00031007532
-cat__unified_district_name_Colton Joint Unified,0.00029832235
-num__county_hist_transaction_count,0.0002866889
-cat__unified_district_name_West Contra Costa Unified,0.00027921956
-cat__unified_district_name_Lake Elsinore Unified,0.00025914382
-cat__unified_district_name_Moorpark Unified,0.00025183955
-cat__CountyOrParish_Ventura,0.00023926719
-cat__unified_district_name_Albany City Unified,0.00023462315
-cat__unified_district_name_Cabrillo Unified,0.00022770195
-cat__unified_district_name_San Marino Unified,0.00022409018
-cat__unified_district_name_Hacienda la Puente Unified,0.00022171663
-cat__unified_district_name_Capistrano Unified,0.00019211625
-cat__CountyOrParish_Sutter,0.00016997875
-cat__unified_district_name_Southern Kern Unified,0.00016918113
-cat__unified_district_name_San Francisco Unified,0.00015748799
-num__is_unknown_district,0.00015702928
-cat__unified_district_name_South Pasadena Unified,0.00014874092
-cat__unified_district_name_Murrieta Valley Unified,0.00013497795
-cat__CountyOrParish_San Francisco,0.0001297727
-cat__CountyOrParish_Kern,8.3932435e-05
-cat__unified_district_name_Newark Unified,0.0
-cat__unified_district_name_Mariposa County Unified,0.0
+num__ListPrice,0.4418905
+cat__CountyOrParish_Riverside,0.16956404
+num__list_price_per_sqft,0.10565567
+num__log_living_area,0.10377608
+cat__CountyOrParish_San Bernardino,0.056854337
+num__LivingArea,0.05668956
+num__BathroomsTotalInteger,0.032642424
+num__property_age,0.008176261
+num__Longitude,0.0071379403
+cat__CountyOrParish_Alameda,0.0018582131
+num__DaysOnMarket,0.0017561751
+num__log_days_on_market,0.0017200758
+cat__unified_district_name_Berkeley Unified,0.0013363514
+num__Latitude,0.00070500304
+cat__CountyOrParish_Santa Clara,0.00068356027
+cat__unified_district_name_Ramona City Unified,0.0005596443
+num__bedrooms_per_1000_sqft,0.00054346625
+cat__unified_district_name_Oakland Unified,0.00048947096
+num__lot_to_living_ratio,0.00046305396
+num__YearBuilt,0.00042892937
+num__BedroomsTotal,0.0004127119
+cat__unified_district_name_Piedmont City Unified,0.00040094246
+num__LotSizeSquareFeet,0.00038398223
+cat__unified_district_name_West Contra Costa Unified,0.00036477603
+cat__CountyOrParish_San Diego,0.00034430114
+cat__unified_district_name_Newark Unified,0.00032905448
+num__log_lot_size,0.0003232916
+num__living_area_per_bedroom,0.00027896222
+cat__unified_district_name_Valley Center-Pauma Unified,0.00027752525
+cat__unified_district_name_Pasadena Unified,0.00026964588
+cat__unified_district_name_San Francisco Unified,0.00026206076
+num__bathrooms_per_bedroom,0.00025766535
+cat__unified_district_name_Albany City Unified,0.00025545355
+cat__unified_district_name_infrequent_sklearn,0.0002490851
+cat__unified_district_name_Needles Unified,0.00024652833
+cat__unified_district_name_Downey Unified,0.00021142997
+cat__CountyOrParish_San Francisco,0.00021116972
+num__is_unknown_district,0.00017601924
+cat__CountyOrParish_Kern,0.00017536341
+cat__unified_district_name_Moorpark Unified,0.00017449333
+cat__unified_district_name_Los Angeles Unified,0.0001660668
+cat__CountyOrParish_Los Angeles,0.00016207562
+cat__unified_district_name_San Marino Unified,0.00013907852
+cat__unified_district_name_Glendale Unified,0.00012844156
+cat__unified_district_name_Yuba City Unified,0.00012827026
+cat__unified_district_name_Lake Elsinore Unified,0.00012612094
+cat__unified_district_name_South Pasadena Unified,0.00012240105
+cat__unified_district_name_Yosemite Unified,0.00011562763
+cat__unified_district_name_Cabrillo Unified,0.00010322682
+cat__CountyOrParish_Ventura,8.859765e-05
+cat__CountyOrParish_Butte,7.331394e-05
+cat__unified_district_name_Compton Unified,7.13014e-05
+cat__unified_district_name_South San Francisco Unified,4.0289317e-05
+cat__unified_district_name_Pacific Grove Unified,0.0
+cat__unified_district_name_Pajaro Valley Unified,0.0
+cat__unified_district_name_Palo Alto Unified,0.0
+cat__unified_district_name_Palo Verde Unified,0.0
+cat__unified_district_name_Palos Verdes Peninsula Unified,0.0
 cat__unified_district_name_Paradise Unified,0.0
 cat__unified_district_name_Paramount Unified,0.0
-cat__unified_district_name_Middletown Unified,0.0
-cat__unified_district_name_Morgan Hill Unified,0.0
-cat__unified_district_name_Martinez Unified,0.0
-cat__unified_district_name_Paso Robles Joint Unified,0.0
+cat__unified_district_name_Palm Springs Unified,0.0
 cat__unified_district_name_Pittsburg Unified,0.0
-cat__unified_district_name_Palo Verde Unified,0.0
-cat__unified_district_name_Manteca Unified,0.0
-cat__unified_district_name_Mt. Diablo Unified,0.0
+cat__CountyOrParish_Contra Costa,0.0
+cat__unified_district_name_Paso Robles Joint Unified,0.0
+cat__CountyOrParish_Calaveras,0.0
+cat__unified_district_name_Orange Unified,0.0
 cat__unified_district_name_Placentia-Yorba Linda Unified,0.0
 cat__unified_district_name_Pleasanton Unified,0.0
-cat__unified_district_name_Manhattan Beach Unified,0.0
 cat__unified_district_name_Pomona Unified,0.0
 cat__unified_district_name_Poway Unified,0.0
-cat__unified_district_name_Palos Verdes Peninsula Unified,0.0
-cat__unified_district_name_Palo Alto Unified,0.0
 cat__unified_district_name_Redlands Unified,0.0
+cat__unified_district_name_Redondo Beach Unified,0.0
+cat__unified_district_name_Rialto Unified,0.0
+cat__unified_district_name_Orland Joint Unified,0.0
+cat__CountyOrParish_Marin,0.0
+cat__unified_district_name_Ojai Unified,0.0
+cat__unified_district_name_Oceanside Unified,0.0
+cat__unified_district_name_Mariposa County Unified,0.0
+cat__unified_district_name_Martinez Unified,0.0
+cat__unified_district_name_Marysville Joint Unified,0.0
+cat__unified_district_name_Mendocino Unified,0.0
+cat__unified_district_name_Middletown Unified,0.0
+cat__unified_district_name_Milpitas Unified,0.0
+cat__unified_district_name_Mojave Unified,0.0
+cat__unified_district_name_Monrovia Unified,0.0
 cat__unified_district_name_Montebello Unified,0.0
-cat__unified_district_name_Moreno Valley Unified,0.0
 cat__unified_district_name_Monterey Peninsula Unified,0.0
-cat__unified_district_name_Newport-Mesa Unified,0.0
+cat__unified_district_name_Moreno Valley Unified,0.0
+cat__unified_district_name_Morgan Hill Unified,0.0
+cat__unified_district_name_Morongo Unified,0.0
+cat__unified_district_name_Mountain Empire Unified,0.0
+cat__unified_district_name_Mt. Diablo Unified,0.0
+cat__unified_district_name_Murrieta Valley Unified,0.0
+cat__unified_district_name_Napa Valley Unified,0.0
 cat__unified_district_name_New Haven Unified,0.0
+cat__CountyOrParish_Fresno,0.0
+cat__unified_district_name_Newport-Mesa Unified,0.0
 cat__unified_district_name_North Monterey County Unified,0.0
 cat__unified_district_name_Norwalk-La Mirada Unified,0.0
 cat__unified_district_name_Oak Park Unified,0.0
-cat__unified_district_name_Monrovia Unified,0.0
-cat__unified_district_name_Palm Springs Unified,0.0
-cat__unified_district_name_Mojave Unified,0.0
-cat__unified_district_name_Ojai Unified,0.0
-cat__unified_district_name_Orange Unified,0.0
-cat__unified_district_name_Orland Joint Unified,0.0
-cat__unified_district_name_Mountain Empire Unified,0.0
-cat__unified_district_name_Milpitas Unified,0.0
-cat__unified_district_name_Pajaro Valley Unified,0.0
-cat__unified_district_name_Pacific Grove Unified,0.0
+cat__unified_district_name_River Delta Joint Unified,0.0
+cat__CountyOrParish_El Dorado,0.0
+cat__unified_district_name_Rim of the World Unified,0.0
 cat__unified_district_name_San Diego Unified,0.0
-cat__unified_district_name_Redondo Beach Unified,0.0
-cat__unified_district_name_Rialto Unified,0.0
+cat__unified_district_name_Riverside Unified,0.0
 cat__unified_district_name_Stockton Unified,0.0
-cat__unified_district_name_Tehachapi Unified,0.0
 cat__unified_district_name_Temecula Valley Unified,0.0
 cat__unified_district_name_Temple City Unified,0.0
 cat__unified_district_name_Templeton Unified,0.0
 cat__unified_district_name_Torrance Unified,0.0
 cat__unified_district_name_Tracy Joint Unified,0.0
+cat__unified_district_name_Travis Unified,0.0
+cat__unified_district_name_Turlock Unified,0.0
 cat__unified_district_name_Tustin Unified,0.0
 cat__unified_district_name_Twin Rivers Unified,0.0
 cat__unified_district_name_Unknown_District,0.0
 cat__unified_district_name_Upland Unified,0.0
+cat__unified_district_name_Upper Lake Unified,0.0
 cat__unified_district_name_Vacaville Unified,0.0
 cat__unified_district_name_Val Verde Unified,0.0
 cat__unified_district_name_Vallejo City Unified,0.0
+num__high_bedroom_flag,0.0
 cat__unified_district_name_Ventura Unified,0.0
 cat__unified_district_name_Visalia Unified,0.0
 cat__unified_district_name_Vista Unified,0.0
 cat__unified_district_name_Walnut Valley Unified,0.0
+num__is_newer_home,0.0
 cat__unified_district_name_West Covina Unified,0.0
 cat__unified_district_name_Willows Unified,0.0
 cat__unified_district_name_Wiseburn Unified,0.0
-cat__unified_district_name_Yosemite Unified,0.0
 cat__unified_district_name_Yucaipa-Calimesa Joint Unified,0.0
-cat__unified_district_name_South San Francisco Unified,0.0
-cat__unified_district_name_Snowline Joint Unified,0.0
-cat__unified_district_name_Simi Valley Unified,0.0
-cat__unified_district_name_San Jose Unified,0.0
-cat__unified_district_name_Rim of the World Unified,0.0
-cat__unified_district_name_River Delta Joint Unified,0.0
-cat__unified_district_name_Riverside Unified,0.0
+cat__unified_district_name_Tehachapi Unified,0.0
+cat__unified_district_name_Southern Kern Unified,0.0
 cat__unified_district_name_Rowland Unified,0.0
+cat__unified_district_name_Soledad Unified,0.0
 cat__unified_district_name_Sacramento City Unified,0.0
 cat__unified_district_name_Saddleback Valley Unified,0.0
 cat__unified_district_name_San Bernardino City Unified,0.0
+cat__unified_district_name_Manhattan Beach Unified,0.0
 cat__unified_district_name_San Gabriel Unified,0.0
-cat__unified_district_name_Lynwood Unified,0.0
 cat__unified_district_name_San Jacinto Unified,0.0
+cat__unified_district_name_San Jose Unified,0.0
+cat__unified_district_name_San Juan Unified,0.0
 cat__unified_district_name_San Leandro Unified,0.0
-cat__unified_district_name_Scotts Valley Unified,0.0
 cat__unified_district_name_San Lorenzo Unified,0.0
 cat__unified_district_name_San Lorenzo Valley Unified,0.0
 cat__unified_district_name_San Luis Coastal Unified,0.0
 cat__unified_district_name_San Marcos Unified,0.0
 cat__unified_district_name_San Ramon Valley Unified,0.0
+cat__unified_district_name_Sanger Unified,0.0
 cat__unified_district_name_Santa Ana Unified,0.0
 cat__unified_district_name_Santa Barbara Unified,0.0
 cat__unified_district_name_Santa Clara Unified,0.0
 cat__unified_district_name_Santa Monica-Malibu Unified,0.0
 cat__unified_district_name_Santa Paula Unified,0.0
+cat__unified_district_name_Scotts Valley Unified,0.0
+cat__unified_district_name_Sierra Sands Unified,0.0
+cat__unified_district_name_Silver Valley Unified,0.0
+cat__unified_district_name_Simi Valley Unified,0.0
+cat__unified_district_name_Snowline Joint Unified,0.0
+cat__unified_district_name_Manteca Unified,0.0
+cat__unified_district_name_Los Banos Unified,0.0
 cat__unified_district_name_Madera Unified,0.0
-cat__unified_district_name_La Canada Unified,0.0
-cat__unified_district_name_Lucia Mar Unified,0.0
-cat__unified_district_name_Burbank Unified,0.0
-cat__CountyOrParish_Yuba,0.0
-cat__CountyOrParish_infrequent_sklearn,0.0
-cat__unified_district_name_ABC Unified,0.0
-cat__unified_district_name_Acton-Agua Dulce Unified,0.0
-cat__unified_district_name_Alameda Unified,0.0
+cat__unified_district_name_Bassett Unified,0.0
 cat__unified_district_name_Alhambra Unified,0.0
 cat__unified_district_name_Alvord Unified,0.0
 cat__unified_district_name_Antioch Unified,0.0
 cat__unified_district_name_Apple Valley Unified,0.0
 cat__unified_district_name_Arcadia Unified,0.0
+cat__unified_district_name_Aromas - San Juan Unified,0.0
 cat__unified_district_name_Atascadero Unified,0.0
 cat__unified_district_name_Azusa Unified,0.0
 cat__unified_district_name_Baldwin Park Unified,0.0
@@ -168,54 +176,65 @@ cat__unified_district_name_Banning Unified,0.0
 cat__unified_district_name_Banta Unified,0.0
 cat__unified_district_name_Barstow Unified,0.0
 cat__unified_district_name_Bear Valley Unified,0.0
+cat__unified_district_name_Lynwood Unified,0.0
 cat__unified_district_name_Beaumont Unified,0.0
 cat__unified_district_name_Bellflower Unified,0.0
+cat__CountyOrParish_Imperial,0.0
 cat__unified_district_name_Beverly Hills Unified,0.0
 cat__unified_district_name_Bonita Unified,0.0
 cat__unified_district_name_Bonsall Unified,0.0
 cat__unified_district_name_Borrego Springs Unified,0.0
-cat__CountyOrParish_Tulare,0.0
-cat__CountyOrParish_Tehama,0.0
-cat__CountyOrParish_Stanislaus,0.0
-cat__CountyOrParish_Merced,0.0
-cat__CountyOrParish_Butte,0.0
-cat__CountyOrParish_Contra Costa,0.0
-cat__CountyOrParish_Fresno,0.0
-cat__CountyOrParish_Glenn,0.0
-cat__CountyOrParish_Imperial,0.0
-cat__CountyOrParish_Kings,0.0
-cat__CountyOrParish_Lake,0.0
-cat__CountyOrParish_Madera,0.0
-cat__CountyOrParish_Mariposa,0.0
+cat__unified_district_name_Brea-Olinda Unified,0.0
+cat__unified_district_name_Burbank Unified,0.0
+cat__unified_district_name_Capistrano Unified,0.0
+cat__unified_district_name_Carlsbad Unified,0.0
+cat__unified_district_name_Carmel Unified,0.0
+cat__unified_district_name_Alameda Unified,0.0
+cat__unified_district_name_Acton-Agua Dulce Unified,0.0
+cat__unified_district_name_ABC Unified,0.0
+cat__CountyOrParish_infrequent_sklearn,0.0
 cat__CountyOrParish_Mendocino,0.0
+cat__CountyOrParish_Merced,0.0
 cat__CountyOrParish_Monterey,0.0
-cat__CountyOrParish_Solano,0.0
+cat__CountyOrParish_Napa,0.0
 cat__CountyOrParish_Orange,0.0
 cat__CountyOrParish_Placer,0.0
+cat__CountyOrParish_Madera,0.0
 cat__CountyOrParish_Sacramento,0.0
 cat__CountyOrParish_San Benito,0.0
-cat__CountyOrParish_San Diego,0.0
+cat__CountyOrParish_Lake,0.0
 cat__CountyOrParish_San Joaquin,0.0
 cat__CountyOrParish_San Luis Obispo,0.0
 cat__CountyOrParish_San Mateo,0.0
 cat__CountyOrParish_Santa Barbara,0.0
+cat__CountyOrParish_Kings,0.0
 cat__CountyOrParish_Santa Cruz,0.0
-cat__unified_district_name_Brea-Olinda Unified,0.0
-cat__unified_district_name_Carlsbad Unified,0.0
-cat__unified_district_name_Lucerne Valley Unified,0.0
-cat__unified_district_name_Carmel Unified,0.0
-cat__unified_district_name_Fresno Unified,0.0
+cat__CountyOrParish_Shasta,0.0
+cat__CountyOrParish_Solano,0.0
+cat__CountyOrParish_Sonoma,0.0
+cat__CountyOrParish_Stanislaus,0.0
+cat__CountyOrParish_Sutter,0.0
+cat__CountyOrParish_Tehama,0.0
+cat__CountyOrParish_Tulare,0.0
+cat__CountyOrParish_Yolo,0.0
+cat__CountyOrParish_Yuba,0.0
+cat__unified_district_name_Castro Valley Unified,0.0
+cat__unified_district_name_Central Unified,0.0
+cat__unified_district_name_Charter Oak Unified,0.0
 cat__unified_district_name_Garden Grove Unified,0.0
-cat__unified_district_name_Gilroy Unified,0.0
-cat__unified_district_name_Glendale Unified,0.0
 cat__unified_district_name_Glendora Unified,0.0
+cat__unified_district_name_Golden Valley Unified,0.0
+cat__unified_district_name_Hacienda la Puente Unified,0.0
 cat__unified_district_name_Hayward Unified,0.0
+cat__unified_district_name_Hemet Unified,0.0
 cat__unified_district_name_Hesperia Unified,0.0
 cat__unified_district_name_Inglewood Unified,0.0
-cat__unified_district_name_Irvine Unified,0.0
+cat__CountyOrParish_Glenn,0.0
+cat__unified_district_name_John Swett Unified,0.0
 cat__unified_district_name_Jurupa Unified,0.0
 cat__unified_district_name_Kelseyville Unified,0.0
 cat__unified_district_name_Konocti Unified,0.0
+cat__unified_district_name_La Canada Unified,0.0
 cat__unified_district_name_Laguna Beach Unified,0.0
 cat__unified_district_name_Lakeport Unified,0.0
 cat__unified_district_name_Lammersville Joint Unified,0.0
@@ -225,32 +244,36 @@ cat__unified_district_name_Lodi Unified,0.0
 cat__unified_district_name_Lompoc Unified,0.0
 cat__unified_district_name_Long Beach Unified,0.0
 cat__unified_district_name_Los Alamitos Unified,0.0
-cat__unified_district_name_Los Angeles Unified,0.0
-cat__unified_district_name_Los Banos Unified,0.0
+cat__CountyOrParish_Mariposa,0.0
+cat__unified_district_name_Lucerne Valley Unified,0.0
+cat__unified_district_name_Lucia Mar Unified,0.0
+cat__unified_district_name_Gilroy Unified,0.0
+cat__unified_district_name_Fresno Unified,0.0
+cat__unified_district_name_Chawanakee Unified,0.0
 cat__unified_district_name_Fremont Unified,0.0
-cat__unified_district_name_Fort Bragg Unified,0.0
-cat__unified_district_name_Fontana Unified,0.0
-cat__unified_district_name_Corona-Norco Unified,0.0
-cat__unified_district_name_Castro Valley Unified,0.0
-cat__unified_district_name_Charter Oak Unified,0.0
 cat__unified_district_name_Chico Unified,0.0
 cat__unified_district_name_Chino Valley Unified,0.0
 cat__unified_district_name_Claremont Unified,0.0
 cat__unified_district_name_Clovis Unified,0.0
 cat__unified_district_name_Coachella Valley Unified,0.0
+cat__unified_district_name_Coalinga-Huron Unified,0.0
 cat__unified_district_name_Coast Unified,0.0
-cat__unified_district_name_Compton Unified,0.0
+cat__unified_district_name_Colton Joint Unified,0.0
 cat__unified_district_name_Conejo Valley Unified,0.0
+cat__unified_district_name_Corona-Norco Unified,0.0
 cat__unified_district_name_Coronado Unified,0.0
-cat__unified_district_name_Fillmore Unified,0.0
 cat__unified_district_name_Covina-Valley Unified,0.0
 cat__unified_district_name_Culver City Unified,0.0
 cat__unified_district_name_Desert Sands Unified,0.0
 cat__unified_district_name_Duarte Unified,0.0
 cat__unified_district_name_Dublin Unified,0.0
+cat__unified_district_name_Durham Unified,0.0
 cat__unified_district_name_El Rancho Unified,0.0
 cat__unified_district_name_El Segundo Unified,0.0
 cat__unified_district_name_El Tejon Unified,0.0
 cat__unified_district_name_Elk Grove Unified,0.0
 cat__unified_district_name_Fairfield-Suisun Unified,0.0
-cat__unified_district_name_Hemet Unified,0.0
+cat__unified_district_name_Fillmore Unified,0.0
+cat__unified_district_name_Fontana Unified,0.0
+cat__unified_district_name_Fort Bragg Unified,0.0
+cat__unified_district_name_Irvine Unified,0.0

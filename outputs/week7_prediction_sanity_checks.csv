@@ -1,6 +1,6 @@
 model_name,min_prediction,max_prediction,predictions_under_0,predictions_over_50m
-LinearRegression,61918.56434745481,31427594.073386546,0,0
-xgb_log_baseline_all,81742.9453125,18564736.0,0,0
-xgb_log_market_context_all,72940.53125,26379218.0,0,0
-xgb_log_market_context_filtered,111449.8359375,18026948.0,0,0
-xgb_log_reality_all,67936.2578125,25502302.0,0,0
+LinearRegression,-57667.45046737511,32606342.277651742,2,0
+xgb_log_baseline_all,90702.0390625,31946142.0,0,0
+xgb_log_market_context_all,70184.0625,30348804.0,0,0
+xgb_log_market_context_filtered,108847.8359375,19778122.0,0,0
+xgb_log_reality_all,70148.0546875,30188248.0,0,0
