@@ -1,0 +1,5 @@
+feature,median,mean,min,max
+LivingArea,1818.0,2048.29339875928,312.0,56500.0
+BedroomsTotal,3.0,3.493347232109563,0.0,22.0
+BathroomsTotalInteger,2.0,2.630432940059669,0.0,35.0
+LotSizeSquareFeet,7287.0,419718.6856397977,0.03,1938942720.0

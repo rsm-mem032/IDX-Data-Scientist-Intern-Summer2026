@@ -1,0 +1,2 @@
+model_name,feature_count,MAE,RMSE,R2,MAPE,MdAPE,min_prediction,max_prediction,predictions_under_0,predictions_over_50m
+xgb_log_county_5_inputs,5,397437.7387422441,1335233.1767398156,0.3659693902566744,0.30542840673412036,0.20223761363636364,165319.8,1.3130615e+07,0,0
