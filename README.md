@@ -1,49 +1,106 @@
-# California Home Price Prediction
+<div align="center">
 
-An end-to-end machine learning project completed during my 12-week Data Science Internship at IDXExchange. The project uses historical California residential sales data to estimate home closing prices and explore how property and location features affect prediction quality.
+# California Home Price Intelligence
 
-## Project Overview
+### An end-to-end machine learning project for residential price estimation in California
 
-The target variable is `ClosePrice`. The project covers the full workflow from raw data preparation to model evaluation and an interactive Streamlit application:
+Built during a 12-week Data Science Internship at **IDXExchange**.
 
-- Explore and clean monthly CRMLS sold-property records.
-- Build a reproducible preprocessing pipeline.
-- Compare interpretable and tree-based regression models.
-- Engineer real estate features, including county and school district information.
-- Evaluate models with a time-based holdout month to reduce leakage.
-- Deploy a small Streamlit app for interactive price estimates.
+<p>
+  <img src="https://img.shields.io/badge/Python-3.13-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python">
+  <img src="https://img.shields.io/badge/XGBoost-modeling-189FDD?style=flat-square" alt="XGBoost">
+  <img src="https://img.shields.io/badge/Streamlit-app-FF4B4B?style=flat-square&logo=streamlit&logoColor=white" alt="Streamlit">
+  <img src="https://img.shields.io/badge/CRMLS-sold%20property%20data-173B3A?style=flat-square" alt="CRMLS">
+</p>
 
-## Dataset
+</div>
 
-The dataset contains monthly CRMLS sold-property extracts covering June 2025 through May 2026. The modeling scope is residential single-family properties:
+## What I Built
 
-- `PropertyType = Residential`
-- `PropertySubType = SingleFamilyResidence`
+This project turns monthly California sold-property records into an interactive price review tool. The workflow covers data preparation, time-based validation, model comparison, real estate feature engineering, and a Streamlit application.
 
-The main modeling split is:
+The app lets a user enter a home's county, living area, bedrooms, bathrooms, and lot size. It returns a predicted closing price and places that estimate next to historical sales from the same county.
 
-- Training period: June 2025 through April 2026
-- Test month: May 2026
+## Project Snapshot
 
-The raw files are kept locally in `data/raw/`. They are not included in the repository.
+| Area | Details |
+|---|---|
+| Business question | How can we estimate a home's closing price while making the result easier to interpret? |
+| Target | `ClosePrice` |
+| Property scope | California residential single-family homes |
+| Data window | June 2025 through May 2026 |
+| Evaluation design | Time-based holdout with May 2026 as the test month |
+| Main research model | XGBoost with a log-transformed target |
+| Interactive output | County-aware Streamlit price estimate |
 
-## Modeling Workflow
+## Key Results
+
+### Research Models
+
+The main research models were evaluated on the May 2026 test month.
+
+| Model | R2 | MAPE | MdAPE | MAE | RMSE |
+|---|---:|---:|---:|---:|---:|
+| XGBoost with reality features | 0.6347 | 7.26% | 2.53% | $74,895 | $1,013,075 |
+| XGBoost with market-context features | 0.6345 | 7.18% | 2.49% | $74,596 | $1,013,250 |
+| Linear Regression baseline | 0.6336 | 24.56% | 10.14% | $198,949 | $1,014,591 |
+
+The XGBoost experiments produced much lower percentage errors than the linear baseline for typical homes. RMSE remained high because California home prices have a long right tail and unusual or luxury properties are harder to predict.
+
+### Streamlit App Model
+
+The live app uses a simpler five-input County XGBoost model so that a user can provide the inputs directly.
+
+| App model | Inputs | R2 | MAPE | MdAPE |
+|---|---:|---:|---:|---:|
+| County-enhanced XGBoost | 5 | 0.3660 | 30.54% | 20.22% |
+| Four-input coursework baseline | 4 | 0.3042 | 44.00% | 31.20% |
+
+The online app model is intentionally different from the strongest full research model. It gives up some predictive power in exchange for a simpler user experience and fewer required inputs.
+
+## Product Experience
+
+### 1. Estimate A Home
+
+The primary view accepts:
+
+- County
+- Living area
+- Bedrooms
+- Bathrooms
+- Lot size
+
+It returns the estimated close price and price per square foot. The result is followed by a historical comparison using recent sales from the same county and similar home-size and bedroom ranges.
+
+### 2. Explore The Market
+
+The market view provides county-level historical context:
+
+- Monthly median close price.
+- Monthly closed-sale volume.
+- Median price per square foot.
+
+The charts use the project's historical training-period sales. They are designed to explain the data behind the estimate, not to act as a live market feed.
+
+### 3. Model And Limitations
+
+The transparency view shows the metrics for the exact model used in the app, price-segment error patterns, input features, and the information the model cannot see.
+
+## Modeling Approach
 
 ### Preprocessing
 
-The preprocessing pipeline includes:
-
-- Combining the monthly CRMLS files.
-- Filtering to the project property scope.
-- Removing duplicate listing records.
-- Converting price, size, bed, bath, lot, location, and date fields to usable types.
-- Removing invalid target values and clearly invalid property records.
-- Creating `close_month` for time-based splitting.
-- Creating features such as `property_age`, `log_living_area`, and `bathrooms_per_bedroom`.
+- Combine the monthly CRMLS sold-property extracts.
+- Filter to residential single-family properties.
+- Remove duplicate listing records.
+- Convert price, size, bed, bath, lot, location, and date fields to usable types.
+- Remove invalid target values and clearly invalid property records.
+- Create `close_month` for time-based splitting.
+- Create features such as `property_age`, `log_living_area`, and `bathrooms_per_bedroom`.
 
 ### Feature Engineering
 
-The project tested several real estate features:
+The project tested:
 
 - Price per square foot.
 - Lot-to-living-area ratio.
@@ -53,78 +110,45 @@ The project tested several real estate features:
 - County information.
 - Unified school district mapping using California school district boundary data.
 
-The experiments showed that adding more features did not automatically improve performance. Feature selection, target transformation, and time-based evaluation were as important as model complexity.
+The experiments showed that additional features did not automatically improve performance. Feature selection, target transformation, and evaluation design were as important as model complexity.
 
 ### Models Tested
 
-- Linear Regression baseline.
+- Linear Regression.
 - Decision Tree Regressor.
 - Random Forest Regressor.
 - XGBoost with a log-transformed target.
-- Simple app models using only the four required property inputs.
-- County-enhanced XGBoost model used by the Streamlit app.
+- Simple app models using the four required property inputs.
+- County-enhanced XGBoost for the interactive app.
 
-## Main Model Results
+## Evaluation Design
 
-The main research models were evaluated on the May 2026 test month.
+The project uses a time-based split to better reflect how a production model would be used:
 
-| Model | R2 | MAPE | MdAPE | MAE | RMSE |
-|---|---:|---:|---:|---:|---:|
-| XGBoost reality features | 0.6347 | 7.26% | 2.53% | $74,895 | $1,013,075 |
-| XGBoost market-context features | 0.6345 | 7.18% | 2.49% | $74,596 | $1,013,250 |
-| Linear Regression baseline | 0.6336 | 24.56% | 10.14% | $198,949 | $1,014,591 |
+```text
+June 2025 - April 2026  ->  training data
+May 2026                ->  evaluation month
+```
 
-The XGBoost models produced much lower percentage errors than the linear baseline for typical homes. The large RMSE reflects the long right tail of California home prices and the difficulty of predicting unusual or luxury properties.
+The main metrics are:
 
-## Streamlit Application
+- **R2:** how much variation in closing price the model explains.
+- **MAPE:** average absolute percentage error.
+- **MdAPE:** median absolute percentage error, which describes the typical case more robustly than MAPE.
+- **MAE:** average dollar error.
+- **RMSE:** a metric that gives extra weight to large errors.
 
-The app is available in `app.py` and is designed as a decision-support demo rather than a formal appraisal tool.
-
-### Estimate A Home
-
-The main estimate uses a saved five-input County XGBoost model. Users enter:
-
-- County
-- Living area
-- Bedrooms
-- Bathrooms
-- Lot size
-
-The app returns a predicted close price and price per square foot. It also compares the estimate with historical closed sales from the same county. The comparison first searches the latest six training months for homes with similar living area and bedroom count. If there are too few matches, it widens the comparison and clearly labels the broader reference.
-
-### Explore The Market
-
-Users can select a county and view:
-
-- Historical median close price by month.
-- Closed sales volume by month.
-- Median price per square foot for the selected county.
-
-These charts describe historical transactions from June 2025 through April 2026. They are not live market data.
-
-### Model And Limitations
-
-The app reports the evaluation metrics for the same five-input model used by the estimate:
-
-| App Model | R2 | MAPE | MdAPE |
-|---|---:|---:|---:|
-| County-enhanced XGBoost | 0.3660 | 30.54% | 20.22% |
-| Simple four-input model | 0.3042 | 44.00% | 31.20% |
-
-The four-input model is retained to satisfy the original app requirement. The County XGBoost model is used as the main app model because it includes a basic location signal.
-
-May 2026 was also used to compare app model candidates, so these app metrics may be somewhat optimistic. A later untouched month would provide a stronger final production evaluation.
+May 2026 was also used to compare the app model candidates. The app results may therefore be somewhat optimistic. A later untouched month would provide a stronger final production evaluation.
 
 ## Repository Structure
 
 ```text
 IDX-Data-Scientist-Intern-Summer2026/
-├── app.py
-├── README.md
-├── requirements.txt
-├── metadata_notes.md
-├── data/
-│   └── raw/
+├── app.py                         # Streamlit application
+├── README.md                      # Project documentation
+├── requirements.txt               # Python dependencies
+├── metadata_notes.md              # Data dictionary and notes
+├── data/raw/                      # Local CRMLS source files
 ├── notebooks/
 │   ├── 01_exploration.ipynb
 │   ├── 02_preprocessing.ipynb
@@ -134,11 +158,11 @@ IDX-Data-Scientist-Intern-Summer2026/
 │   ├── 05_advanced_models.ipynb
 │   ├── 06_evaluation.ipynb
 │   └── 07_streamlit_app_model.ipynb
-├── outputs/
-└── src/
+├── outputs/                      # Saved models, metrics, and predictions
+└── src/                          # Supporting project code
 ```
 
-## How To Run
+## Run The Project
 
 ### Install Dependencies
 
@@ -150,12 +174,6 @@ On macOS, install the OpenMP runtime required by XGBoost if needed:
 
 ```bash
 brew install libomp
-```
-
-On the remote project environment, use:
-
-```bash
-/opt/base-uv/.venv/bin/python -m pip install -r requirements.txt
 ```
 
 ### Re-run The Notebooks
@@ -173,7 +191,7 @@ Place the monthly CRMLS files in `data/raw/`, then run the notebooks in order:
 07_streamlit_app_model.ipynb
 ```
 
-The last notebook saves the models and CSV files used by the app in `outputs/`.
+The final notebook saves the serialized models and CSV files used by the app in `outputs/`.
 
 ### Launch The App
 
@@ -183,7 +201,7 @@ From the repository root:
 streamlit run app.py
 ```
 
-If the command is unavailable:
+If the `streamlit` command is unavailable:
 
 ```bash
 python -m streamlit run app.py
@@ -192,10 +210,13 @@ python -m streamlit run app.py
 ## Limitations
 
 - The app does not use exact street location, interior condition, renovation quality, views, or current listing competition.
-- The app model is simpler than the full research models because it is limited to the information a user can enter easily.
+- The app model is simpler than the full research models because it is limited to information a user can enter easily.
 - A prediction is a screening estimate, not a formal appraisal, lending decision, or offer to buy.
 - Unusual, luxury, and thin-market homes require additional comparable-sale and professional review.
+- The raw CRMLS files are not included in this public repository.
 
 ## Author
 
-Mia Ma
+**Mia Ma**
+
+Data Science Intern | Machine Learning | Real Estate Analytics
